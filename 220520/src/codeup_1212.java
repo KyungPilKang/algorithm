@@ -40,5 +40,6 @@ public class codeup_1212 {
 				System.out.println(e.getMessage());
 			}
 		}
+		in.close();
 	}
 }

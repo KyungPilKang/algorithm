@@ -55,5 +55,6 @@ public class backjun_2_7 {
 				System.out.println(e.getMessage());
 			}
 		}
+		in.close();
 	}
 }

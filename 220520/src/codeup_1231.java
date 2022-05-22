@@ -42,5 +42,6 @@ public class codeup_1231 {
 				System.out.println(e.getMessage());
 			}
 		}
+		in.close();
 	}
 }

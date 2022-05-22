@@ -133,5 +133,6 @@ public class codeup_1226 {
 			result="²Î";
 		}
 		System.out.println("³ªÀÇ ´çÃ·°á°ú : "+result);
+		in.close();
 	}
 }
