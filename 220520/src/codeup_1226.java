@@ -30,12 +30,12 @@ public class codeup_1226 {
 		while(true) {
 			try {
 				System.out.println("첫번째 숫자를 입력하세요");
-				a=in.nextInt();
+				a=Integer.parseInt(in.nextLine());
 				if(a<1||a>45) {
 					throw new Exception("오류 : 1~45사이의 숫자를 입력하세요");
 				}
 				System.out.println("두번째 숫자를 입력하세요");
-				b=in.nextInt();
+				b=Integer.parseInt(in.nextLine());
 				if(b<1||b>45) {
 					throw new Exception("오류 : 1~45사이의 숫자를 입력하세요");
 				}
@@ -43,7 +43,7 @@ public class codeup_1226 {
 					throw new Exception("오류 : 동일한 숫자를 입력할 수 없습니다");
 				}
 				System.out.println("세번째 숫자를 입력하세요");
-				c=in.nextInt();
+				c=Integer.parseInt(in.nextLine());
 				if(c<1||c>45) {
 					throw new Exception("오류 : 1~45사이의 숫자를 입력하세요");
 				}
@@ -51,7 +51,7 @@ public class codeup_1226 {
 					throw new Exception("오류 : 동일한 숫자를 입력할 수 없습니다");
 				}
 				System.out.println("네번째 숫자를 입력하세요");
-				d=in.nextInt();
+				d=Integer.parseInt(in.nextLine());
 				if(d<1||d>45) {
 					throw new Exception("오류 : 1~45사이의 숫자를 입력하세요");
 				}
@@ -59,7 +59,7 @@ public class codeup_1226 {
 					throw new Exception("오류 : 동일한 숫자를 입력할 수 없습니다");
 				}
 				System.out.println("다섯번째 숫자를 입력하세요");
-				e=in.nextInt();
+				e=Integer.parseInt(in.nextLine());
 				if(e<1||e>45) {
 					throw new Exception("오류 : 1~45사이의 숫자를 입력하세요");
 				}
@@ -67,7 +67,7 @@ public class codeup_1226 {
 					throw new Exception("오류 : 동일한 숫자를 입력할 수 없습니다");
 				}
 				System.out.println("여섯번째 숫자를 입력하세요");
-				f=in.nextInt();
+				f=Integer.parseInt(in.nextLine());
 				if(f<1||f>45) {
 					throw new Exception("오류 : 1~45사이의 숫자를 입력하세요");
 				}
@@ -81,6 +81,9 @@ public class codeup_1226 {
 				Mylotto.add(e);
 				Mylotto.add(f);
 				break;
+			}
+			catch(NumberFormatException err) {
+				System.out.println("숫자를 입력하세요");
 			}
 			catch(Exception err) {
 				System.out.println(err.getMessage());
