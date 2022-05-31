@@ -19,7 +19,9 @@ public class codeup_1226 {
 			if(lotto.get(0)!=lotto.get(1)&&lotto.get(0)!=lotto.get(2)&&lotto.get(0)!=lotto.get(3)&&lotto.get(0)!=lotto.get(4)&&lotto.get(0)!=lotto.get(5)&&lotto.get(0)!=lotto.get(6)) {
 				break;
 			}
+			lotto.clear();
 		}
+		System.out.println("테스트 : "+lotto.toString());
 		Scanner in=new Scanner(System.in);
 		int a;
 		int b;
@@ -29,6 +31,7 @@ public class codeup_1226 {
 		int f;
 		while(true) {
 			try {
+				System.out.println("나의 로또번호를 입력합니다");
 				System.out.println("첫번째 숫자를 입력하세요");
 				a=Integer.parseInt(in.nextLine());
 				if(a<1||a>45) {

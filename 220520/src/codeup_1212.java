@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class codeup_1212 {
 	public static void main(String[] args) {
+		long start=0;
 		Scanner in=new Scanner(System.in);
 		int a;
 		int b;
@@ -41,5 +42,7 @@ public class codeup_1212 {
 			}
 		}
 		in.close();
+		long end = System.currentTimeMillis();
+		System.out.println( "실행 시간 : " + ( end - start )/1000.00 +"초");
 	}
 }
