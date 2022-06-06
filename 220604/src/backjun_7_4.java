@@ -9,6 +9,7 @@ public class backjun_7_4 {
 		int d=0;
 		int v_mor=0;
 		int v_nig=0;
+		sc.close();
 		while(true) {
 			d++;
 			v_mor=v_nig+a;
