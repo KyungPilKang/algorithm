@@ -11,7 +11,7 @@ public class codeup_1495 {
 		m=Integer.parseInt(sc.next());
 		k=Integer.parseInt(sc.next());
 		
-		for(i=1;i<=k;i++) {
+		for(i=1;i<=k;i++) { //데이터에 의해 생성된 배열
 			x1=Integer.parseInt(sc.next());
 			y1=Integer.parseInt(sc.next());
 			x2=Integer.parseInt(sc.next());
@@ -25,7 +25,7 @@ public class codeup_1495 {
 		
 		sc.close();
 		
-		for(i=0;i<n;i++) {
+		for(i=0;i<n;i++) { //위에서 생성된 배열 출력
 			for(j=0;j<m;j++) {
 				System.out.print(d[i][j]+" ");
 			}
@@ -34,6 +34,7 @@ public class codeup_1495 {
 		
 		System.out.println();
 		
+		//생성된 배열을 기준으로 누적합 배열을 생성
 		for(i=0;i<n;i++) {
 			for(j=0;j<m;j++) {
 				sum+=d[i][j];
