@@ -7,10 +7,9 @@ public class codeup_1411 {
 		System.out.println("입력 예시");
 		Scanner sc = new Scanner(System.in);
 		int n = Integer.parseInt(sc.next());
-		sc.close();
 		int[] arr=new int[n-1];
 		for(int i=0;i<n-1;i++) {
-			arr[i]=((int)(Math.random()*n+1));
+			arr[i]=Integer.parseInt(sc.next());
 			for(int j=0;j<i;j++) {
 				if(arr[i]==arr[j]) {
 					i--;
@@ -18,6 +17,7 @@ public class codeup_1411 {
 				}
 			}
 		}
+		sc.close();
 		System.out.println(Arrays.toString(arr));
 		System.out.println("출력 예시");
 		int sum_arr=0;
