@@ -7,17 +7,10 @@ public class backjun_7_1 {
 		int vc=Integer.parseInt(sc.next());
 		int price=Integer.parseInt(sc.next());
 		sc.close();
-		if(vc>price) {
+		if(vc>=price) {
 			System.out.println(-1);
 		} else {
-			int x=1;
-			while(true) { //손익분기점이란? 고정비용 = (가격 - 가변비용)
-				if(fc<((price-vc)*x)) {
-					System.out.println(x);
-					break;
-				}
-				x++;
-			}
+			System.out.println((fc/(price-vc)+1));
 		}
 	}
 }
