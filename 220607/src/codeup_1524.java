@@ -35,10 +35,6 @@ public class codeup_1524 {
 				count+=matrix[n+1][m];
 				count+=matrix[n][m+1];
 				count+=matrix[n+1][m+1];
-			}else if(n==0&&m==0) { //11시 모서리
-				count+=matrix[n+1][m];
-				count+=matrix[n][m+1];
-				count+=matrix[n+1][m+1];
 			}else if(n>0&&n!=8&&m==8) { //모서리 제외 우변
 				count+=matrix[n-1][m-1];
 				count+=matrix[n][m-1];
@@ -51,6 +47,14 @@ public class codeup_1524 {
 				count+=matrix[n-1][m];
 				count+=matrix[n-1][m+1];
 				count+=matrix[n][m+1];
+			}else if(n==0&&m==0) { //11시 모서리
+				count+=matrix[n+1][m];
+				count+=matrix[n][m+1];
+				count+=matrix[n+1][m+1];
+			}else if(n==0&&m==8){ //1시 모서리
+				count+=matrix[n][m-1];
+				count+=matrix[n+1][m-1];
+				count+=matrix[n+1][m];
 			}else if(n==8&&m==8) { //5시 모서리
 				count+=matrix[n-1][m-1];
 				count+=matrix[n][m-1];
@@ -59,10 +63,6 @@ public class codeup_1524 {
 				count+=matrix[n-1][m];
 				count+=matrix[n-1][m+1];
 				count+=matrix[n][m+1];
-			}else if(n==0&&m==8){ //1시 모서리
-				count+=matrix[n][m-1];
-				count+=matrix[n+1][m-1];
-				count+=matrix[n+1][m];
 			}else { //테두리 제외 내부
 				count+=matrix[n-1][m-1];
 				count+=matrix[n][m-1];
