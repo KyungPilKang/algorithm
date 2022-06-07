@@ -23,47 +23,47 @@ public class codeup_1524 {
 		if(matrix[n][m]==1) {
 			System.out.println(-1);
 		}else {
-			if(n!=0&&n<8&&m==0) {
+			if(n!=0&&n<8&&m==0) { //모서리 제외 좌변
 				count+=matrix[n-1][m];
 				count+=matrix[n+1][m];
 				count+=matrix[n-1][m+1];
 				count+=matrix[n][m+1];
 				count+=matrix[n+1][m+1];
-			}else if(n==0&&m!=0&&m<8){
+			}else if(n==0&&m!=0&&m<8){ //모서리 제외 윗변
 				count+=matrix[n][m-1];
 				count+=matrix[n+1][m-1];
 				count+=matrix[n+1][m];
 				count+=matrix[n][m+1];
 				count+=matrix[n+1][m+1];
-			}else if(n==0&&m==0) {
+			}else if(n==0&&m==0) { //11시 모서리
 				count+=matrix[n+1][m];
 				count+=matrix[n][m+1];
 				count+=matrix[n+1][m+1];
-			}else if(n>0&&n!=8&&m==8) {
+			}else if(n>0&&n!=8&&m==8) { //모서리 제외 우변
 				count+=matrix[n-1][m-1];
 				count+=matrix[n][m-1];
 				count+=matrix[n+1][m-1];
 				count+=matrix[n-1][m];
 				count+=matrix[n+1][m];
-			}else if(n==8&&m!=8&&m>0) {
+			}else if(n==8&&m!=8&&m>0) { //모서리 제외 밑변
 				count+=matrix[n-1][m-1];
 				count+=matrix[n][m-1];
 				count+=matrix[n-1][m];
 				count+=matrix[n-1][m+1];
 				count+=matrix[n][m+1];
-			}else if(n==8&&m==8) {
+			}else if(n==8&&m==8) { //5시 모서리
 				count+=matrix[n-1][m-1];
 				count+=matrix[n][m-1];
 				count+=matrix[n-1][m];
-			}else if(n==8&&m==0){
+			}else if(n==8&&m==0){ //7시 모서리
 				count+=matrix[n-1][m];
 				count+=matrix[n-1][m+1];
 				count+=matrix[n][m+1];
-			}else if(n==0&&m==8){
+			}else if(n==0&&m==8){ //1시 모서리
 				count+=matrix[n][m-1];
 				count+=matrix[n+1][m-1];
 				count+=matrix[n+1][m];
-			}else {
+			}else { //테두리 제외 내부
 				count+=matrix[n-1][m-1];
 				count+=matrix[n][m-1];
 				count+=matrix[n+1][m-1];
