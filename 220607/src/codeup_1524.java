@@ -15,7 +15,10 @@ public class codeup_1524 {
 		int n=Integer.parseInt(sc.next()); //1 > 0
 		int m=Integer.parseInt(sc.next()); //2 > 1
 		
-		n--;
+		//사용자 입력은 1~9
+		//2차원 매트릭스의 인덱스는 0~8
+		//따라서 -1 연산을 추가
+		n--; 
 		m--;
 		
 		int count=0;
